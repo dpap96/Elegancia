@@ -1,0 +1,296 @@
+
+body{
+   /* background-image: url('back1.jpg'); */
+    background-color: #e1dad2;
+    background-size: cover; /*to cover*/
+    background-repeat: no-repeat;
+    text-align: center; /*oti grafete na exi kentriki stixisi*/
+    TOP:0; /*αποσταση απο πανω*/
+    width: 100%; /*ευρος σελιδας*/
+    margin: 0 ; /*να μην υπαρχουν αποστασεις*/
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color:#3d0505;
+}
+.headerContainer {
+    display: flex;
+    
+    align-items: center;
+  }
+  .A {
+    width: 60%;
+    height: 30px;
+    
+    margin:auto;
+    text-align: center;
+
+  }
+  .B {
+    width: 20%;
+    height: 30px;
+   
+  }   
+  .C{
+    width: 20%;
+    height: 30px;
+    
+  }
+  .dark-mode {
+    background-color: #cebeb9;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(back.jpg);
+    color: white;
+  }
+  .dark-mode1{
+    background-color:#cebeb9;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(back.jpg);
+    
+    color: white;
+  }
+.firstContainer{
+    margin: auto;
+    align-items: center;
+    position: relative;
+    padding-top:30px;
+    z-index: 998;
+}
+h1{
+    position: absolute;
+    margin-left: 40px;
+    font-family: 'Cookie', cursive;
+    font-size: 100px;
+    margin-top: 0px;
+
+    
+}
+a{  position: relative;
+    margin: auto 50px auto 50px; /*einai oi apostaseis auto=pano , 50px aristera auto kato */
+    text-decoration:none; /*In order all hyperlinks not being underlined*/
+    font-weight: bold;
+    text-decoration:none; /*In order all hyperlinks not being underlined*/
+    color:#360808;
+    font-weight: 900px;
+}
+h2{
+    width: 70%;
+    margin:50px auto 50px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size:30px;
+
+}
+.h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.secondContainer{
+    margin-bottom: 0px;
+}
+.Visitbtn ,input[type=submit] {
+    -webkit-border-radius: 18;
+    -moz-border-radius: 18;
+    border-radius: 18px;
+    font-family: Arial;
+    color: #360808;
+    font-size: 20px;
+    background: white;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .Visitbtn:hover {
+    background: #360808;
+    color:#ffffff;
+    text-decoration: none;
+  }
+.hr{
+    margin-top: 50px;
+    width:80%;
+}
+.container{ /*για το container που περιεχει μεσα του το grid*/
+    min-height: 100vh;
+    display: flex; /*του δινει την δυνατοτητα να ειναι flexible*/
+    justify-content: space-evenly;/*καθοριζει τις αποστασεις μεταξυ των εικονων*/
+    gap:20px;
+ 
+}
+.gallery{
+    flex-basis: 65%; /*για να ναι το grid πιο φαρδυ*/
+    display: grid;/*grid μορφη*/
+    gap:15px; /*κενο μεταξυ των εικονων*/
+    grid-template-columns: repeat(3,1fr); /*η στοιχιση του grid*/
+    grid-auto-rows: 130px;
+    margin: auto;
+    margin-top:130px;
+
+
+
+}
+.box{
+    background-size: cover;/*καθε φωτο να ειναι ωσ cover*/
+    background-position: top;
+    color:rgb(53, 38, 38);
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    background-blend-mode:hard-light;
+    transition: all 1s ease-in-out;
+    cursor:pointer;
+    
+
+}
+.box:hover {
+    background-color: #4b3a3a;
+    background-position: center;/*οταν βαζω το ποντικι να παει στο κεντρο*/
+    box-shadow: 0 0 4px #756565;
+}
+.row-2 {
+    grid-row: span 3; /*ΚΑΤΑΛΑΜΒΑΝΕΙ 2 γραμμεσ*/
+}
+.col-2 {
+    grid-column: span 2; /*ΚΑΤΑΛΑΜΒΑΝΕΙ 2 στηλες*/
+}
+
+@media screen and (max-width: 1024px) {
+    .container .secondContainer{
+        flex-direction: column;
+        padding-block: 20px;
+    }
+    .gallery {
+        width: 100%;
+        padding-inline: 15px;
+        grid-auto-rows: 70px; /*οι γραμμες θα εχουν μηκος 220px*/
+    }
+    .box {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+}
+.Shopfont{
+    
+    
+    
+    background-size:cover ;
+    position: relative; /*να μετακινειται αλλα να δεσμευει την αρχικη θεση*/
+    padding-top: 150px;
+    padding-bottom: 20px;
+
+}
+.superduper{
+    background-image: url('mine.jpg');
+    background-position: cover;
+    top:0;
+    height:560px;
+    
+    
+    background-size:cover ;
+    position: relative; /*να μετακινειται αλλα να δεσμευει την αρχικη θεση*/
+}
+.ShopHeader{
+    position: relative;/**/
+    
+
+
+}
+.h3shop,h4{
+    font-size:45px;
+    line-height: 1.2em;
+    margin: auto;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    font-family: 'Cookie', 'cursive';
+
+
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  width: 600px;
+  margin: auto;
+}
+
+.button-div {
+  flex: 1;
+  height: 100%;
+  padding-top: 10px;
+  
+}
+
+
+
+.orderlist-div {
+  flex: 1;
+  height: 100%;
+  
+}
+.grid-container {
+    display: grid;
+    grid: auto /auto auto auto;
+    grid-gap: 10px;
+    background-color: none;
+    padding: 10px;
+    width: 900px;
+    height: 900px;
+    margin: auto;
+    flex-basis: 60%; /*για να ναι το grid πιο φαρδυ*/
+    min-height: 60vh;
+  }
+  
+.grid-container > div {
+    background-color: rgba(114, 96, 96, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    grid-template-columns: repeat(3,1fr); /*η στοιχιση του grid*/
+    
+  }
+ .footer-container{
+    position: relative;
+    height:200px;
+    margin-top: 20px;
+    font-weight: lighter;
+    font-weight: 250;
+    font-family: 'Montserrat', sans-serif;
+    
+   
+ }
+ footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color:#423b3b;
+    color:#ffffff;
+    padding-top: 10px;
+    margin:auto;
+    padding-bottom: 50px;
+    font-weight: 250;
+}
+.footer-link{
+    color:#ffffff;
+    font-weight: 250;
+}
+
+
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  .search-container {
+    float: right;
+    position:absolute;
+    width:40%;
+    display: table-cell;
+  }
+
+  

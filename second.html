@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegancia Fine Arts-Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .blurred-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 100px;
+        margin-bottom: 200px;
+        height: 600px;
+        width: 100%;
+        background-image: url('');
+        background-size: cover;
+        background-position: center;
+        filter: blur(10px); /* adjust the blur effect as desired */
+    }
+
+    .template-div{
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #918c8c;
+        position: absolute;
+        height: 250px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        width: 60%;
+        padding: 20px;
+        text-align: center;
+    }
+    h1:hover {
+        color: red;
+        position: relative;
+        }
+</style>
+
+
+
+
+
+</head>
+<body>
+    <div class="headerContainer" >
+        <div class="C"><button  style="color:white; background-color: #630808;"onclick="myFunction()">DARK MODE</button></div>
+        <div class="A"><strong>Free worldwide shipping</strong></div>
+        <div class="B"> <input type="search" value="Search..."></div>
+    </div>
+    <div class="firstContainer" style="position: absolute;">
+
+        <h1><a href="index.html">Elegancia</a></h1>
+        <a href="Shop.html"> SHOP</a>
+        <a href="Gallery.html">GALLERY</a>
+        <a href="About.html">ABOUT</a>
+        <a href="Contact.html">CONTACT</a>
+        <a href="ScanQr.html">SCAN QR CODE</a>
+        <a href="index.html">HOME</a>
+        
+
+
+    </div>
+    <div class="blurred-bg"></div>
+	<div class="template-div">
+		<h1 class="elegancia" style="position: relative; "><a style="color:white;" href="index.html">Elegancia</a></h1>
+		<p class="elegancia">Breathtaking works from artists around the world. <br>Discover paintings, sculptures, photography, and more, carefully selected for their beauty and artistry.</p>
+	</div>
+    
+</body>
+</html>
