@@ -18,3 +18,5 @@ Contact Page(Contact.html) : It contains user registration or login forms. In ad
 ScanQr Page(ScanQr.html)   : Users can easily scan the QR code using their mobile device and be automatically redirected to a page featuring art contests.
 
 The current website was created without using any ready-made templates, CSS and HTML were used for the overall layout, and minimal JavaScript code for user interaction (when the user clicks the night mode button). It is an early stage of a website.
+
+link:https://dpap96.github.io/Elegancia/index.html
